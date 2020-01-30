@@ -16,26 +16,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="390" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4I-U3-T9Q">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="120" id="LNu-q0-1G0"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4I-U3-T9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="121"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJJ-Gn-itO">
-                        <rect key="frame" x="8" y="128" width="374" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJJ-Gn-itO">
+                        <rect key="frame" x="10" y="129" width="370" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="qJJ-Gn-itO" secondAttribute="trailing" constant="8" id="AOf-1b-Zuo"/>
-                    <constraint firstAttribute="trailing" secondItem="Y4I-U3-T9Q" secondAttribute="trailing" constant="0.01" id="McR-MQ-I2y"/>
-                    <constraint firstItem="Y4I-U3-T9Q" firstAttribute="top" secondItem="Aho-c8-7M1" secondAttribute="top" constant="0.01" id="fRF-LY-Jsh"/>
-                    <constraint firstItem="qJJ-Gn-itO" firstAttribute="top" secondItem="Y4I-U3-T9Q" secondAttribute="bottom" constant="8" id="g8k-mr-L13"/>
-                    <constraint firstItem="qJJ-Gn-itO" firstAttribute="leading" secondItem="Aho-c8-7M1" secondAttribute="leading" constant="8" id="lkd-dk-c6t"/>
-                    <constraint firstItem="Y4I-U3-T9Q" firstAttribute="leading" secondItem="Aho-c8-7M1" secondAttribute="leading" constant="0.01" id="zev-g8-Qth"/>
+                    <constraint firstItem="Y4I-U3-T9Q" firstAttribute="leading" secondItem="Aho-c8-7M1" secondAttribute="leading" id="CAM-nn-PiS"/>
+                    <constraint firstItem="Y4I-U3-T9Q" firstAttribute="top" secondItem="Aho-c8-7M1" secondAttribute="top" id="VQt-OZ-pgo"/>
+                    <constraint firstAttribute="trailing" secondItem="qJJ-Gn-itO" secondAttribute="trailing" constant="10" id="VY0-Kt-59i"/>
+                    <constraint firstItem="qJJ-Gn-itO" firstAttribute="top" secondItem="Y4I-U3-T9Q" secondAttribute="bottom" constant="8" id="bm3-Xr-ix6"/>
+                    <constraint firstAttribute="trailing" secondItem="Y4I-U3-T9Q" secondAttribute="trailing" id="fRW-uU-AtB"/>
+                    <constraint firstItem="qJJ-Gn-itO" firstAttribute="leading" secondItem="Aho-c8-7M1" secondAttribute="leading" constant="10" id="kNe-0r-sA2"/>
+                    <constraint firstItem="Y4I-U3-T9Q" firstAttribute="height" secondItem="Aho-c8-7M1" secondAttribute="height" multiplier="0.65" id="ygX-z9-bx8"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
