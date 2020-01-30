@@ -1,7 +1,7 @@
 import UIKit
 
 class UserCollectionViewController: UIViewController {
-
+    
     private var userView = UserCollectionView()
     var users = [User]() {
         didSet{
@@ -10,8 +10,6 @@ class UserCollectionViewController: UIViewController {
     }
     override func loadView() {
         view = userView
-        
-
     }
     
     override func viewDidLoad() {
@@ -40,7 +38,6 @@ extension UserCollectionViewController: UICollectionViewDelegateFlowLayout {
         let itemSpacing: CGFloat = 10
         let maxSize: CGFloat = UIScreen.main.bounds.size.width
         let numberOfItems: CGFloat = 3
-        //let itemWidth: CGFloat = maxSize.width * 0.40
         let totalSpace: CGFloat = numberOfItems * itemSpacing
         let itemWidth: CGFloat = (maxSize - totalSpace) / numberOfItems
         return CGSize(width: itemWidth, height: itemWidth)
@@ -53,6 +50,14 @@ extension UserCollectionViewController: UICollectionViewDelegateFlowLayout {
         return 1
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        
+        let detailVC = DetailController()
+        detailVC.user = user
+        navigationController?.pushViewController(detailVC, animated: true)
+        
+    }
 }
 extension UserCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
